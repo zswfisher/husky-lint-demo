@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pre-commit": "eslint --ext .jsx,.js src/"
+    "pre-commit": "eslint --ext .jsx,.js,ts,tsx src/"
   },
   "eslintConfig": {
     "extends": [
@@ -38,11 +38,20 @@
   },
   "devDependencies": {
     "eslint": "^8.38.0",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.7"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm pre-commit"
     }
+  },
+  "lint-staged": {
+    "*.{js, jsx, ts, tsx}": [
+      "prettier --write",
+      "eslint --cache",
+      "git add"
+    ]
   }
 }
