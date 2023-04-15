@@ -4,5 +4,5 @@
 npm run pre-commit
 
 # 获取上面脚本的退出码
-exitCode="$?"
+exitCode="$0"
 exit $exitCode
