@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const a = "1234"
+// const a = "12345";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
