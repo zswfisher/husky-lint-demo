@@ -15,8 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "pre-commit": "eslint --ext .jsx,.js,ts,tsx src/"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -41,10 +40,5 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.7"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm pre-commit"
-    }
   }
 }
