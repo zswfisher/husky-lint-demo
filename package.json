@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "pre-commit": "eslint --ext .jsx,.js,ts,tsx src/"
+    "pre-commit": "eslint --ext .jsx,.js,ts,tsx src/",
+    "lint-staged": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
